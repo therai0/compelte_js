@@ -25,3 +25,6 @@ str.indexOf()
 str.trim()
 str.replace()
 */
+
+let istring = "   apple   ball  cat   "
+console.log(istring.trim())

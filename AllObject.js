@@ -35,3 +35,41 @@ console.log(employee)
 employee.msgMe()
 
 
+//Object part-2
+let newObj = new Object() // thsi type of object is called singleton object
+// console.log(newObj)
+
+// we can create the object inside the object it is called neasted object
+const user ={
+    name:"Hari",
+    address:{
+        home:"Ktm",
+        presentAdd:"Btm",
+        toll:12
+    }
+}
+// console.log(user.address.home)
+
+
+//we can concat the two object 
+const obj1 = {
+    name:"Hari",
+    age: 12
+}
+const boj2 = {
+    isPresent: true,
+    above18:false
+}
+
+// lests marge the two object
+const newObj1 = {...boj2,...obj1}
+console.log(newObj1) 
+console.log(Object.keys(newObj1))
+// it will return the all the keys of the newObject in array
+//now we can use the loop in this key word
+// as like keys we can access the values of the object 
+
+console.log(Object.values(newObj1))
+
+
+
